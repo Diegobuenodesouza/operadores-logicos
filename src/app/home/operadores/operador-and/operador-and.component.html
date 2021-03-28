@@ -1,0 +1,44 @@
+<div class="container">
+
+    <div class="row">
+        <h5 >
+            Operador AND && - Resulta em um valor VERDADEIRO se os dois valores de entrada da operação forem VERDADEIROs, caso contrário o resultado é FALSO       
+        </h5>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 col-sm-12">
+
+        </div>
+        <div class="col-md-2  text-botao">
+            Botão 1
+        </div>
+
+        <div class="col-md-2 text-botao">
+            Botão 2
+        </div>
+    </div>
+    
+    <div class="row">
+
+        <div class="col-md-3 col-sm-12">            
+        </div>
+        
+        <div class="col-md-2 ">                               
+            <button (click)="alterarbtn1()" [ngClass]="{'img-ligado': botao1 , 'img-desligado' : !botao1}"> </button>
+        </div>       
+        
+        <div class="col-md-2 ">
+            <button (click)="alterarbtn2()" [ngClass]="{'img-ligado': botao2 , 'img-desligado' : !botao2}"> </button>
+        </div>   
+        
+        <div class="col-md-5 ">
+           <div [ngClass]="{'lampada-apagada' : botao1 == false || botao2 == false,
+           'lampada-acesa' : botao1 == true && botao2 == true            
+        }"></div>
+         </div>
+
+        
+    </div>  
+    
+</div>

@@ -1,0 +1,45 @@
+.container{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+h2{
+    text-align: center;
+    font-weight: 700;
+}
+
+.table{
+    margin-top: 30px
+}
+
+
+a{ 
+    text-decoration: none;
+    color: black;
+}
+
+button{    
+    margin-bottom: 10px;
+    background-color: rgb(250, 187, 187);
+    padding: 20px;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+.border-esquerda{
+    border-radius: 20px 0px 0px 20px;    
+}
+.border-direita{
+border-radius: 0px 20px 20px 0px;
+}
+
+li{   
+    display: inline; 
+    list-style-type: none;    
+}
+a:hover{
+    background-color:rgb(197, 141, 141)
+    
+}
