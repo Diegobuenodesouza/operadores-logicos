@@ -1,0 +1,37 @@
+<div class="container">
+
+    <div class="row">
+        <h5 >
+            Operador NOT ! - Inverter os valores. Ou seja, se o valor de entrada for VERDADEIRO, o resultado será FALSO e se o valor de entrada for FALSO, o resultado será VERDADEIRO.     
+        </h5>
+    </div>
+
+    <div class="row">
+        
+        <div class="col-md-3 col-sm-2"></div>
+        <div class="col-md-3 col-sm-2 text-botao">
+            Botão 1
+        </div>
+
+    </div>
+    
+    <div class="row">        
+        
+        <div class="col-md-3 col-sm-2"></div>
+
+        <div class="col-md-3 col-sm-2   ">           
+            <button  (click)="alterarbtn()" [ngClass]="{'img-ligado': botao1 , 'img-desligado' : !botao1}"> </button>
+                    
+        </div>      
+               
+        
+        <div class="col-md-6 col-sm-8">
+           <div  [ngClass]="{'lampada-acesa' : botao1 == false,
+           'lampada-apagada' : botao1 == true           
+        }"></div>
+         </div>
+
+        
+    </div>  
+    
+</div>
